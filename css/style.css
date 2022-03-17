@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+header, main, footer {
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 27px;
+}
+
+.head .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.head .menu-link {
+  position: relative;
+  line-height: 23px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.head .menu-link::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -35px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.head .menu-link:hover {
+  color: #0082F4;
+}
+
+.head .menu-link:hover::before {
+  background: #0082F4;
+}
+
+.head .menu-btn {
+  width: 161px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #0082F4;
+  border-radius: 6px;
+  line-height: 23px;
+  color: #FFFFFF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.head .menu-btn:hover {
+  background: #0062f4;
+}
+
+.head .menu-btn:hover:active {
+  background: #0058dd;
+}
+
+hr {
+  margin-top: 9px;
+  border: none;
+  height: 1px;
+  background-color: #0283F5;
+  opacity: 0.1;
+}
+
+@media (max-width: 1024px) {
+  .head {
+    padding: 0 5px;
+  }
+}
+
+.business {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smart {
+  width: 530px;
+}
+
+.smart .up-title {
+  font-size: 25px;
+  line-height: 1.45em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0080FD;
+  margin-bottom: 5px;
+}
+
+.smart .smart-title {
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 79px;
+  margin-bottom: 20px;
+}
+
+.smart .smart-title .title-span {
+  color: #0082F4;
+}
+
+.smart .bottom-title {
+  font-size: 0.8rem;
+  line-height: 24px;
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+.smart-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.smart-buttons .smart-btn {
+  width: 194px;
+  height: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.smart-buttons .st-btn {
+  background: #0082F4;
+  font-weight: 500;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+
+.smart-buttons .st-btn:hover {
+  background: #0062f4;
+}
+
+.smart-buttons .st-btn:hover:active {
+  background: #0058dd;
+}
+
+.smart-buttons .pl-btn {
+  border: 1px solid #0082F4;
+  background: transparent;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 19px;
+}
+
+.smart-buttons .pl-btn img {
+  margin-right: 15px;
+}
+
+.smart-buttons .pl-btn:hover {
+  background: #dad0ff;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .business {
+    padding: 0 5px;
+  }
+  .business .smart {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .business .smart .smart-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .business .bsn-img {
+    display: none;
+  }
+}
