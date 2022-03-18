@@ -137,15 +137,6 @@ hr {
 .smart {
     width: 530px;
 
-    .up-title {
-        font-size: 25px;
-        line-height: 1.45em;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #0080FD;
-        margin-bottom: 5px;
-    }
-
     .smart-title {
         font-weight: 700;
         font-size: 3em;
@@ -156,60 +147,69 @@ hr {
             color: $colorBlue;
         }
     }
+}
 
-    .bottom-title {
-        font-size: 0.8rem;
-        line-height: 24px;
-        opacity: 0.6;
-        margin-bottom: 30px;
-    }
+.up-title {
+    font-size: 25px;
+    line-height: 1.45em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #0080FD;
+    margin-bottom: 5px;
+}
+
+.bottom-title {
+    font-size: 0.8rem;
+    line-height: 24px;
+    opacity: 0.6;
+    margin-bottom: 30px;
 }
 
 .smart-buttons {
     display: flex;
+}
 
-    .smart-btn {
-        width: 194px;
-        height: 63px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        transition: .2s;
+.smart-btn {
+    width: 194px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.st-btn {
+    background: $colorBlue;
+    font-weight: 500;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-right: 30px;
+}
+
+.st-btn:hover {
+    background: #0062f4;
+}
+
+.st-btn:hover:active {
+    background: #0058dd;
+}
+
+.pl-btn {
+    border: 1px solid #0082F4;
+    background: transparent;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 19px;
+
+    img {
+        margin-right: 15px;
     }
+}
 
-    .st-btn {
-        background: $colorBlue;
-        font-weight: 500;
-        line-height: 23px;
-        color: #FFFFFF;
-        margin-right: 30px;
-    }
-
-    .st-btn:hover {
-        background: #0062f4;
-    }
-
-    .st-btn:hover:active {
-        background: #0058dd;
-    }
-
-    .pl-btn {
-        border: 1px solid #0082F4;
-        background: transparent;
-        font-weight: 500;
-        font-size: 0.8rem;
-        line-height: 19px;
-
-        img {
-            margin-right: 15px;
-        }
-    }
-
-    .pl-btn:hover {
-        background: #dad0ff;
-        border: none;
-    }
+.pl-btn:hover {
+    background: #dad0ff;
+    border: none;
 }
 
 @media (max-width: 1024px) {
@@ -231,7 +231,48 @@ hr {
     }
 }
 
+// -------------------------
 
+// Platform
+
+.promoting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.promote-images {
+    position: relative;
+
+    .promoting-img-2 {
+        position: absolute;
+        right: 62px;
+        top: 62px;
+    }
+
+    .promoting-elipse {
+        position: absolute;
+        right: 270px;
+        top: 270px;
+    }
+}
+
+.community {
+    width: 500px;
+
+    .community-title {
+        font-weight: 700;
+        font-size: 2.45em;
+        line-height: 64px;
+    }
+
+    .commynity-bottom-title {
+        line-height: 30px;
+        opacity: 0.6;
+        margin-bottom: 30px;
+    }
+}
 
 
 
