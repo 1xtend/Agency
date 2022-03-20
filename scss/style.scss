@@ -274,6 +274,60 @@ hr {
     }
 }
 
+// -------------------------
+
+// Work
+
+.work-container {
+    margin-top: 210px;
+
+    .work-title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 73px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+
+.work-list {
+    display: flex;
+    justify-content: space-between;
+
+    .work-item {
+        text-align: center;
+        width: 330px;
+
+        .work-item__img {
+            padding: 40px;
+            border: 4px solid $colorBlue;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .work-item__title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 10px;
+        }
+
+        .work-item__text {
+            font-size: 20px;
+            line-height: 30px;
+            opacity: 0.7;
+        }
+    }
+}
+
+
+
+// -------------------------
+
+
 
 
 
